@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Section */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Banner Section */
+marquee img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Description Section */
+.description {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.diamond {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diamond:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.diamond img {
+  width: 100%; /* Ensures the image fills the container */
+  height: 200px; /* Sets a consistent height for all images */
+  object-fit: cover; /* Ensures the image scales properly without distortion */
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #212f3c;
+  color: #f5f5f5;
+}
+
+/* Footer Section */
+footer {
+  background-color: #212f3c;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+footer img {
+  width: 150px;
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  background-color: gold;
+}
+
+footer .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  footer {
+    text-align: center;
+  }
+}
